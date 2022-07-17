@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.heading{
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
+}
+.color{
+    color: coral;
+}
+.error{
+    font-size: 1.5rem;
+    color: #4e4e4e;
+    padding: 10px 0px;
+}

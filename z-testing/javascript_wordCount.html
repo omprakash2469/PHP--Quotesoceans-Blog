@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordCount</title>
+</head>
+<body>
+    <h1>This is Javscript Word Counter</h1>
+    <button  onclick="countWords('  This is the String and many strings are        there in this field to count they string')">Click to Count</button>
+    <p id="para"></p>
+    <script>
+        let counter = document.getElementById('para');
+        function countWords(str) {
+           str = str.replace(/(^\s*)|(\s*$)/gi,"");
+           str = str.replace(/[ ]{2,}/gi," ");
+           str = str.replace(/\n /,"\n");
+           counter.innerHTML = str.split(' ').length;
+        }
+     </script>
+</body>
+</html>
